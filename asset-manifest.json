@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/chippr-beyco-newspage/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/chippr-beyco-newspage/static/js/main.a31a76ce.chunk.js",
-    "main.js.map": "/chippr-beyco-newspage/static/js/main.a31a76ce.chunk.js.map",
-    "runtime-main.js": "/chippr-beyco-newspage/static/js/runtime-main.b2a82904.js",
-    "runtime-main.js.map": "/chippr-beyco-newspage/static/js/runtime-main.b2a82904.js.map",
-    "static/js/2.d0eb047a.chunk.js": "/chippr-beyco-newspage/static/js/2.d0eb047a.chunk.js",
-    "static/js/2.d0eb047a.chunk.js.map": "/chippr-beyco-newspage/static/js/2.d0eb047a.chunk.js.map",
-    "static/js/3.a6e4d959.chunk.js": "/chippr-beyco-newspage/static/js/3.a6e4d959.chunk.js",
-    "static/js/3.a6e4d959.chunk.js.map": "/chippr-beyco-newspage/static/js/3.a6e4d959.chunk.js.map",
-    "index.html": "/chippr-beyco-newspage/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/chippr-beyco-newspage/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.d0eb047a.chunk.js.LICENSE.txt": "/chippr-beyco-newspage/static/js/2.d0eb047a.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/chippr-beyco-newspage/static/media/logo.6ce24c58.svg"
+    "main.css": "/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/static/js/main.a31a76ce.chunk.js",
+    "main.js.map": "/static/js/main.a31a76ce.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.31ee9be5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.31ee9be5.js.map",
+    "static/js/2.d0eb047a.chunk.js": "/static/js/2.d0eb047a.chunk.js",
+    "static/js/2.d0eb047a.chunk.js.map": "/static/js/2.d0eb047a.chunk.js.map",
+    "static/js/3.a6e4d959.chunk.js": "/static/js/3.a6e4d959.chunk.js",
+    "static/js/3.a6e4d959.chunk.js.map": "/static/js/3.a6e4d959.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.d0eb047a.chunk.js.LICENSE.txt": "/static/js/2.d0eb047a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2a82904.js",
+    "static/js/runtime-main.31ee9be5.js",
     "static/js/2.d0eb047a.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.a31a76ce.chunk.js"
