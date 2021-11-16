@@ -55,6 +55,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 
 ## 📚 Wiki
+[Wiki](https://github.com/DaanKorver/chippr-beyco-newspage/wiki)
 ## 📙 Bronnen
 
 ## 💳 Licentie
