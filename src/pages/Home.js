@@ -1,5 +1,7 @@
+import {NavLink as Link} from 'react-router-dom'
 function Home() {
-  return <h1>Home</h1>
+  return <Link to="/article/1">Article link</Link>
+  
 }
 
 export default Home
