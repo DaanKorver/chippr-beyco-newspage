@@ -7,6 +7,7 @@ import flag from "./../../assets/flag-us.svg"
 function Navbar() {
   return <header>
     <nav>
+      <div className="hamburger"></div>
       <ul>
         <li className="hover">
           <Link to="/"><img src={logo} alt="Beyco logo" /></Link>
