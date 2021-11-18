@@ -1,0 +1,39 @@
+.hero {
+  width: 90%;
+  height: 60vh;
+  margin: 0 auto;
+  background-color: var(--color-lightgreen);
+  padding: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.hero > div {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15em;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 > span {
+  color: var(--color-primary)
+}
+
+.hero p {
+  font-size: 21px;
+}
+
+@media (max-width: 50rem) {
+  .hero h1 {
+    letter-spacing: -.03em;
+    font-size: 2.5rem;
+  }
+}
