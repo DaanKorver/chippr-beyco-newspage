@@ -1,0 +1,47 @@
+header {
+  height: 5em;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,ul {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+ul > li > a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul > li a {
+  font-size: 17px;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+nav > div {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+nav > div > div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}

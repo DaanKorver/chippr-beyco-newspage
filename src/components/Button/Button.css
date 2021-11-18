@@ -1,0 +1,22 @@
+.btn {
+  padding: 12.75px 25.5px;
+  border-radius: 3.4px;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  font-size: 17px;
+  display: inline-flex;
+  transition: all .1s ease-in-out;
+}
+
+.btn.small {
+  padding: 0.5rem 1rem;
+}
+
+.btn.full {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 0.33rem var(--color-primary-transparent);
+}
