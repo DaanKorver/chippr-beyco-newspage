@@ -1,4 +1,4 @@
-import {NavLink as Link} from 'react-router-dom'
+// import {NavLink as Link} from 'react-router-dom'
 import "./Home.css"
 function Home() {
   return <main>
