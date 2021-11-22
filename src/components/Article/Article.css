@@ -1,0 +1,40 @@
+article {
+  height: 450px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+article > img,
+article > .article-body {
+  width: 50%;
+}
+
+.article-body {
+  padding: 1em 2em 1em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.article-body > p:first-child {
+  color: #B5B5B5;
+  font-size: 17px;
+  margin-bottom: 2em;
+}
+
+.article-body > p {
+  font-size: 21px;
+  margin-bottom: 1em;
+}
+
+.article-body > h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}

@@ -31,6 +31,14 @@
   font-size: 21px;
 }
 
+.home-grid {
+  display: grid;
+  padding: 5%;
+  background-color: var(--color-lightgrey);
+  grid-template-columns: auto 300px;
+  column-gap: 2rem; 
+}
+
 @media (max-width: 50rem) {
   .hero h1 {
     letter-spacing: -.03em;
