@@ -6,6 +6,9 @@ article {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  max-width: 1200px;
 }
 
 article > img,

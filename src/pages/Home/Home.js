@@ -1,9 +1,13 @@
 // import {NavLink as Link} from 'react-router-dom'
 import Sidebar from "../../components/Sidebar/Sidebar"
 import Article from "../../components/Article/Article"
-// import articles from "../../articles.json"
+import articles from "../../articles.json"
 import "./Home.css"
 function Home() {
+  const posts = articles.map((item)=>{
+    const {id,title,paragraphs, author, upload} = item
+    return <Article key={id} title={title} body={paragraphs} author={author} upload={upload}/>
+  })
   return (
     <main>
       <section className="hero">
@@ -14,7 +18,7 @@ function Home() {
     </section>
     <div className="home-grid">
       <div className="articles">
-        <Article/>
+        {posts}
       </div>
       <Sidebar/>
     </div>
