@@ -10,7 +10,7 @@ function Article(props) {
       <div className="article-body">
         <p>5 oct. 2021 - Uploaded by Beyco</p>
         <h2>{title}</h2>
-        <p>{body}</p>
+        <p>{body.split(' ').slice(0,40).join(' ')}</p>
         <Button style={['full', 'small']}>Read more</Button>
       </div>
     </article>

@@ -1,7 +1,7 @@
 article {
   height: 450px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--color-white);
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@ article > .article-body {
   padding: 1em 2em 1em 3em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
 }
@@ -33,7 +33,7 @@ article > .article-body {
 
 .article-body > p {
   font-size: 21px;
-  margin-bottom: 1em;
+  margin-bottom: auto;
 }
 
 .article-body > h2 {

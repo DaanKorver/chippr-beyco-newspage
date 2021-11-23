@@ -1,4 +1,4 @@
-.hero {
+.banner {
   width: 90%;
   height: 60vh;
   margin: 0 auto;
@@ -11,23 +11,23 @@
   margin-bottom: 8rem;
 }
 
-.hero > div {
+.banner > div {
   max-width: 600px;
   text-align: center;
 }
 
-.hero h1 {
+.banner h1 {
   font-size: 58px;
   line-height: 1.15em;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
 }
 
-.hero h1 > span {
+.banner h1 > span {
   color: var(--color-primary)
 }
 
-.hero p {
+.banner p {
   font-size: 21px;
 }
 
@@ -39,8 +39,18 @@
   column-gap: 2rem; 
 }
 
+@media (max-width: 85rem) {
+  .home-grid {
+    grid-template-columns: auto;
+  }
+  .articles {
+    order: 2;
+  }
+  
+}
+
 @media (max-width: 50rem) {
-  .hero h1 {
+  .banner h1 {
     letter-spacing: -.03em;
     font-size: 2.5rem;
   }
