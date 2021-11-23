@@ -1,13 +1,18 @@
 import "./Sidebar.css";
+import filter from "./../../assets/filter.svg"
+import search from "./../../assets/search.svg"
 
 function Sidebar() {
   return (
     <section className="sidebar">
       <h2>Recent Articles</h2>
-      <form action="">
-        <input type="search" />
+      <form action="/">
+        <label htmlFor="search">
+          <img src={search} alt="magnifying-glass" />
+          <input type="search" id="search" placeholder="Find articles..." />
+        </label>
         <fieldset>
-          <legend>Sort on</legend>
+          <legend><img src={filter}/>Sort on</legend>
           <label htmlFor="most-recent">
             <input type="radio" id="most-recent" name="sort-on" />
             <div className="custom-checkbox"></div>
@@ -33,7 +38,7 @@ function Sidebar() {
           </label>
         </fieldset>
         <fieldset>
-          <legend>Topic</legend>
+          <legend><img src={filter}/>Topic</legend>
           <label htmlFor="coffee">
             <input type="radio" id="coffee" name="topic" />
             <div className="custom-checkbox"></div>

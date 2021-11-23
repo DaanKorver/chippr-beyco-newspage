@@ -4,6 +4,7 @@ label {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: .5rem;
+  position: relative;
 }
 
 fieldset {
@@ -11,6 +12,17 @@ fieldset {
   background-color: var(--color-white);
   margin-bottom: 2rem;
   padding: 1rem;
+  border-radius: 5px;
+}
+
+legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+legend > img {
+  margin-right: .5em;
 }
 
 input[type="radio"] {
@@ -56,10 +68,13 @@ input[type="radio"]:checked + .custom-checkbox::after {
 input[type=search] {
   border: none;
   border-bottom: 0.15rem solid #dddee0;
-  padding: .5rem;
+  padding: .5rem .5rem .35rem 2rem;
   border-radius: 0.2rem;
   width: 300px;
-  margin-bottom: 1.5rem;
+  outline: none;
+  transition: all .3s;
+  width: 100%;
+  font-size: 1em;
 }
 
 input[type=search]:hover {
@@ -68,6 +83,14 @@ input[type=search]:hover {
 
 input[type=search]:focus {
   border-bottom-color: var(--color-primary);
+  box-shadow: 0 0 0 0.33rem var(--color-primary-transparent);
+}
+
+label > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: .5em;
 }
 
 @media (max-width: 85rem) {
