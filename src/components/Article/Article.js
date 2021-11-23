@@ -10,7 +10,7 @@ function Article(props) {
       <div className="article-body">
         <p>5 oct. 2021 - Uploaded by Beyco</p>
         <h2>{title}</h2>
-        <p>{paragraphs}</p>
+        <p>{body}</p>
         <Button style={['full', 'small']}>Read more</Button>
       </div>
     </article>
