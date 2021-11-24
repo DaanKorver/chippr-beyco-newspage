@@ -12,7 +12,7 @@ function Sidebar() {
           <input type="search" id="search" placeholder="Find articles..." />
         </label>
         <fieldset>
-          <legend><img src={filter}/>Sort on</legend>
+          <legend><img src={filter} alt="filter"/>Sort on</legend>
           <label htmlFor="most-recent">
             <input type="radio" id="most-recent" name="sort-on" />
             <div className="custom-checkbox"></div>
@@ -38,7 +38,7 @@ function Sidebar() {
           </label>
         </fieldset>
         <fieldset>
-          <legend><img src={filter}/>Topic</legend>
+          <legend><img src={filter} alt="filter"/>Topic</legend>
           <label htmlFor="coffee">
             <input type="radio" id="coffee" name="topic" />
             <div className="custom-checkbox"></div>

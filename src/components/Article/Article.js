@@ -4,6 +4,7 @@ import Button from "./../Button/Button"
 
 function Article(props) {
   const {id,title,body, author, upload} = props
+  console.log(id,author, upload);
   return (
     <article>
       <img src={logo} alt="" />
