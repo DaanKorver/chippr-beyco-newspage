@@ -4,7 +4,7 @@ import Article from "../../components/Article/Article"
 import articles from "../../articles.json"
 import "./Home.css"
 function Home() {
-  const posts = articles.map((item)=>{
+  const posts = articles.map(item=>{
     const {id,title,paragraphs, author, upload} = item
     return <Article key={id} title={title} body={paragraphs[0]} author={author} upload={upload}/>
   })
@@ -16,11 +16,13 @@ function Home() {
           <p>Beyco supports you in connecting efficiently with existing and potential new coffee sellers and buyers, creating a track record online and making your coffee traceable from farmer to roaster. Connect today!</p>
       </div>
     </section>
+    <div className="articles">
     <div className="home-grid">
-      <div className="articles">
+      <div className="articles-container">
         {posts}
       </div>
       <Sidebar/>
+    </div>
     </div>
   </main>
   )

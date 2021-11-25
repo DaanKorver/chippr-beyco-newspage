@@ -1,11 +1,16 @@
 import "./RecentArticle.css"
+import logo from "./../../assets/blockchain.png"
 
-function RecentArticle() {
+function RecentArticle(props) {
+  const {title, upload} = props
   return (
-    <section>
-      <h3>Very recent article over here</h3>
-      <sub>Lord why, Lord why, do I gotta wake up</sub>
-    </section>
+    <div class="recent-article">
+      <img src={logo} alt="blockchain" />
+      <section>
+        <h3>{title}</h3>
+        <time>{upload}</time>
+      </section>
+    </div>
   )
 }
 

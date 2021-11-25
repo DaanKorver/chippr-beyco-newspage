@@ -1,11 +1,18 @@
 import "./Sidebar.css";
 import filter from "./../../assets/filter.svg"
 import search from "./../../assets/search.svg"
+import articles from "../../articles.json"
+import RecentArticle from "../RecentArticle/RecentArticle";
 
 function Sidebar() {
+  const recentArticles = articles.slice(-3).map(item=>{
+    const {id, title, upload} = item
+    return <RecentArticle key={id} title={title} upload={upload}/>
+  })
   return (
     <section className="sidebar">
       <h2>Recent Articles</h2>
+      {recentArticles}
       <form action="/">
         <label htmlFor="search">
           <img src={search} alt="magnifying-glass" />
