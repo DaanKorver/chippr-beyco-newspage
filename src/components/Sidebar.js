@@ -1,8 +1,8 @@
-import "./Sidebar.css";
-import filter from "./../../assets/filter.svg"
-import search from "./../../assets/search.svg"
-import articles from "../../articles.json"
-import RecentArticle from "../RecentArticle/RecentArticle";
+import "@/styles/Sidebar.css";
+import filter from "@/assets/icons/filter.svg"
+import search from "@/assets/search.svg"
+import articles from "@/articles.json"
+import RecentArticle from "@/components/RecentArticle";
 
 function Sidebar() {
   const recentArticles = articles.slice(-3).map(item=>{

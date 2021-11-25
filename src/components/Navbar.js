@@ -1,8 +1,8 @@
 import {NavLink as Link} from 'react-router-dom'
-import "./Navbar.css"
-import logo from "./../../assets/logo.svg"
-import Button from "./../Button/Button"
-import flag from "./../../assets/flag-us.svg"
+import "@/styles/Navbar.css"
+import logo from "@/assets/icons/logo.svg"
+import Button from "@/components/Button"
+import flag from "@/assets/icons/flag-us.svg"
 
 function Navbar() {
   return <header>

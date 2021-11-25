@@ -1,4 +1,4 @@
-import "./Button.css"
+import "@/styles/Button.css"
 
 function Button(props) {
   const {children, style, customClick} = props

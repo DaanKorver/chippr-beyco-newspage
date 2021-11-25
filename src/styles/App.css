@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 
 @font-face {
-  src: url('./assets/fonts/kumb-sans.ttf');
+  src: url('../assets/fonts/kumb-sans.ttf');
   font-family: "Kumbh Sans";
 }
 

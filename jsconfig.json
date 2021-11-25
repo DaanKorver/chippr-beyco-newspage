@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "preserve",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"],
+      "@/helpers/*": ["./helpers/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/components/*": ["./components/*"],
+      "@/pages/*": ["./pages/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}

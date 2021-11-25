@@ -1,12 +1,12 @@
 // import {NavLink as Link} from 'react-router-dom'
-import Sidebar from "../../components/Sidebar/Sidebar"
-import Article from "../../components/Article/Article"
-import articles from "../../articles.json"
-import "./Home.css"
+import Sidebar from "@/components/Sidebar"
+import Article from "@/components/Article"
+import articles from "@/articles.json"
+import "@/styles/Home.css"
 function Home() {
   const posts = articles.map(item=>{
-    const {id,title,paragraphs, author, upload} = item
-    return <Article key={id} id={id} title={title} body={paragraphs[0]} author={author} upload={upload}/>
+    const {id,title,paragraphs, upload} = item
+    return <Article key={id} id={id} title={title} body={paragraphs[0]} upload={upload}/>
   })
   
   return (

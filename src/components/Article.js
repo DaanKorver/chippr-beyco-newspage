@@ -1,14 +1,13 @@
-import "./Article.css" 
-import logo from "./../../assets/blockchain.png"
-import Button from "./../Button/Button"
-import formatDate from "../../helpers/dateFormatter";
+import "@/styles/Article.css" 
+import articleImage from "@/assets/images/blockchain.png"
+import Button from "@/components/Button"
+import formatDate from "@/helpers/dateFormatter";
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 
 
 function Article(props) {
-  const {id,title,body, author, upload} = props
-  console.log(author, upload);
+  const {id,title,body, upload} = props
   const date = formatDate(upload)
   const { ref, inView } = useInView({
     threshold: 0,
@@ -18,7 +17,7 @@ function Article(props) {
   const navigate = useNavigate()
   return (
     <article ref={ref} className={inView ? 'animate' : ''}>
-      <img src={logo} alt="" />
+      <img src={articleImage} alt="blockchain" />
       <div className="article-body">
         <p>{date}</p>
         <h2>{title}</h2>
