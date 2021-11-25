@@ -6,8 +6,9 @@ import "./Home.css"
 function Home() {
   const posts = articles.map((item)=>{
     const {id,title,paragraphs, author, upload} = item
-    return <Article key={id} title={title} body={paragraphs[0]} author={author} upload={upload}/>
+    return <Article key={id} id={id} title={title} body={paragraphs[0]} author={author} upload={upload}/>
   })
+  
   return (
     <main>
       <section className="banner">

@@ -5,7 +5,7 @@ function Article() {
   const params = useParams()
   return <div>
     <h1>Article {params.id}</h1>
-    <Link to="/">Article link</Link>
+    <Link to="/">Back to home</Link>
   </div>
 }
 
