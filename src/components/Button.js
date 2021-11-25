@@ -1,8 +1,12 @@
-import "@/styles/Button.css"
+import "@/styles/Button.css";
 
 function Button(props) {
-  const {children, style, customClick} = props
-  return <button onClick={customClick} className={'btn ' + style.join(' ')}>{children}</button>
+  const { children, style, customClick } = props;
+  return (
+    <button onClick={customClick} className={"btn " + style.join(" ")}>
+      {children}
+    </button>
+  );
 }
 
-export default Button
+export default Button;

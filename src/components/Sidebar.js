@@ -1,14 +1,14 @@
 import "@/styles/Sidebar.css";
-import filter from "@/assets/icons/filter.svg"
-import search from "@/assets/search.svg"
-import articles from "@/articles.json"
+import filter from "@/assets/icons/filter.svg";
+import search from "@/assets/search.svg";
+import articles from "@/articles.json";
 import RecentArticle from "@/components/RecentArticle";
 
 function Sidebar() {
-  const recentArticles = articles.slice(-3).map(item=>{
-    const {id, title, upload} = item
-    return <RecentArticle key={id} id={id} title={title} upload={upload}/>
-  })
+  const recentArticles = articles.slice(-3).map((item) => {
+    const { id, title, upload } = item;
+    return <RecentArticle key={id} id={id} title={title} upload={upload} />;
+  });
   return (
     <section className="sidebar">
       <h2>Recent Articles</h2>
@@ -19,7 +19,10 @@ function Sidebar() {
           <input type="search" id="search" placeholder="Find articles..." />
         </label>
         <fieldset>
-          <legend><img src={filter} alt="filter"/>Sort on</legend>
+          <legend>
+            <img src={filter} alt="filter" />
+            Sort on
+          </legend>
           <label htmlFor="most-recent">
             <input type="radio" id="most-recent" name="sort-on" />
             <div className="custom-checkbox"></div>
@@ -45,7 +48,10 @@ function Sidebar() {
           </label>
         </fieldset>
         <fieldset>
-          <legend><img src={filter} alt="filter"/>Topic</legend>
+          <legend>
+            <img src={filter} alt="filter" />
+            Topic
+          </legend>
           <label htmlFor="coffee">
             <input type="radio" id="coffee" name="topic" />
             <div className="custom-checkbox"></div>

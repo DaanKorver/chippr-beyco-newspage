@@ -30,7 +30,7 @@
 }
 
 .recent-article section time {
-  color: #B5B5B5;
+  color: var(--color-grey);;
 }
 
 @media (max-width: 85rem) {

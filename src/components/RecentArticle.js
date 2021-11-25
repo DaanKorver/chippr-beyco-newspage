@@ -8,14 +8,14 @@ function RecentArticle(props) {
   const navigate = useNavigate()
   const date = formatDate(upload)
   return (
-    <div onClick={()=>navigate(`/article/${id}`)} className="recent-article">
+    <div onClick={() => navigate(`/article/${id}`)} className="recent-article">
       <img src={articleImage} alt="blockchain" />
       <section>
         <h3>{title}</h3>
         <time>{date}</time>
       </section>
     </div>
-  )
+  );
 }
 
 export default RecentArticle
