@@ -7,7 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Article(props) {
   const {id,title,body, author, upload} = props
-  const { ref, inView, entry } = useInView({
+  console.log(author, upload);
+  const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
     initialInView: true,
