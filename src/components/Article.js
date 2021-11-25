@@ -16,9 +16,9 @@ function Article(props) {
   });
   const navigate = useNavigate()
   return (
-    <article ref={ref} className={inView ? 'animate' : ''}>
+    <article ref={ref} className={`single-article ${inView ? 'animate' : ''}`}>
       <img src={articleImage} alt="blockchain" />
-      <div className="article-body">
+      <div className="body">
         <p>{date}</p>
         <h2>{title}</h2>
         <p>{body.split(' ').slice(0,40).join(' ')}</p>
