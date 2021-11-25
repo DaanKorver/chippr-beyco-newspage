@@ -1,8 +1,5 @@
 # 📃 Beyco Bewspage
-
-## 🎨 Beschrijving
-<!-- Voeg een link toe naar Github Pages 🌐-->
-<!-- Voeg een mooie poster visual toe 📸 -->
+![Mockup Beyco](assets/mockup.jpg)
 
 ## ✨ Inhoudsopgave
 
