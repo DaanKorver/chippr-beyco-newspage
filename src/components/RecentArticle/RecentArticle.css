@@ -8,6 +8,32 @@
 }
 
 .recent-article img {
-  width: 59%;
   height: 4rem;
+}
+
+.recent-article h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 12rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.recent-article section {
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+.recent-article section time {
+  color: #B5B5B5;
+}
+
+@media (max-width: 85rem) {
+  .recent-article {
+    display: none;
+  }
 }

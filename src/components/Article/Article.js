@@ -20,7 +20,6 @@ function Article(props) {
         <p>5 oct. 2021 - Uploaded by Beyco </p>
         <h2>{title}</h2>
         <p>{body.split(' ').slice(0,40).join(' ')}</p>
-        <p>Id: {id}</p>
         <Button customClick={()=>navigate(`/article/${id}`)} style={['full', 'small']}>Read more</Button>
       </div>
     </article>

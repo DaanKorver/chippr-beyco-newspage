@@ -1,3 +1,7 @@
+.sidebar > h2 {
+  margin-bottom: 1em;
+}
+
 label {
   display: block;
   display: flex;
@@ -96,5 +100,8 @@ label > img {
 @media (max-width: 85rem) {
   .sidebar {
     order: 1;
+  }
+  .sidebar > h2 {
+    display: none;
   }
 }
