@@ -34,16 +34,21 @@
 .home-grid {
   display: grid;
   padding: 5%;
-  background-color: var(--color-lightgrey);
   grid-template-columns: auto 300px;
   column-gap: 2rem; 
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.articles {
+  background-color: var(--color-lightgrey);
 }
 
 @media (max-width: 85rem) {
   .home-grid {
     grid-template-columns: auto;
   }
-  .articles {
+  .articles-container {
     order: 2;
   }
   
