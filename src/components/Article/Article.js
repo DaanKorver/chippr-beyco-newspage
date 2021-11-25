@@ -1,6 +1,7 @@
 import "./Article.css" 
 import logo from "./../../assets/blockchain.png"
 import Button from "./../Button/Button"
+import formatDate from "../../helpers/dateFormatter";
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 function Article(props) {
   const {id,title,body, author, upload} = props
   console.log(author, upload);
+  const date = formatDate(upload)
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
@@ -18,7 +20,7 @@ function Article(props) {
     <article ref={ref} className={inView ? 'animate' : ''}>
       <img src={logo} alt="" />
       <div className="article-body">
-        <p>5 oct. 2021 - Uploaded by Beyco </p>
+        <p>{date}</p>
         <h2>{title}</h2>
         <p>{body.split(' ').slice(0,40).join(' ')}</p>
         <Button customClick={()=>navigate(`/article/${id}`)} style={['full', 'small']}>Read more</Button>

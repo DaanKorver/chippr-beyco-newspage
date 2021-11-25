@@ -7,7 +7,7 @@ import RecentArticle from "../RecentArticle/RecentArticle";
 function Sidebar() {
   const recentArticles = articles.slice(-3).map(item=>{
     const {id, title, upload} = item
-    return <RecentArticle key={id} title={title} upload={upload}/>
+    return <RecentArticle key={id} id={id} title={title} upload={upload}/>
   })
   return (
     <section className="sidebar">
