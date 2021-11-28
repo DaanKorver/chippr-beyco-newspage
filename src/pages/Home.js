@@ -5,14 +5,15 @@ import articles from "@/articles.json";
 import "@/styles/Home.css";
 function Home() {
   const posts = articles.map((item) => {
-    const { id, title, paragraphs, upload } = item;
+    const { id, title, image, description, upload } = item;
     return (
       <Article
         key={id}
         id={id}
         title={title}
-        body={paragraphs[0]}
+        description={description}
         upload={upload}
+        image={image}
       />
     );
   });

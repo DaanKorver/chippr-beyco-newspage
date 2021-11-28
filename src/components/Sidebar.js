@@ -6,9 +6,9 @@ import RecentArticle from "@/components/RecentArticle";
 
 function Sidebar() {
   const recentArticles = articles.slice(-3).map((item) => {
-    const { id, title, upload } = item;
-    return <RecentArticle key={id} id={id} title={title} upload={upload} />;
-  });
+    const { id, title, image, upload } = item;
+    return <RecentArticle key={id} id={id} title={title} image={image} upload={upload} />;
+  }).reverse();
   return (
     <section className="sidebar">
       <h2>Recent Articles</h2>
