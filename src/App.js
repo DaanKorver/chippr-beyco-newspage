@@ -2,17 +2,21 @@ import '@/styles/App.css';
 import Navbar from '@/components/Navbar'
 import Home from '@/pages/Home';
 import Article from '@/pages/FullArticle';
-import {Route, Routes, BrowserRouter as Router} from 'react-router-dom'
+import {Route, Routes, Switch, useLocation} from 'react-router-dom'
+import { AnimatePresence } from "framer-motion" 
 
 function App() {
+  const location = useLocation()
   return (
-    <Router>
-      <Navbar />
-      <Routes>
+    <div>
+    <Navbar />
+    <AnimatePresence exitBeforeEnter initial={false}>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home/>}/>
         <Route path="/article/:id" element={<Article/>}/>
       </Routes>
-    </Router>
+    </AnimatePresence>
+    </div>
   );
 }
 
