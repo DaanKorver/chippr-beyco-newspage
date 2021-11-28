@@ -2,7 +2,7 @@ import '@/styles/App.css';
 import Navbar from '@/components/Navbar'
 import Home from '@/pages/Home';
 import Article from '@/pages/FullArticle';
-import {Route, Routes, Switch, useLocation} from 'react-router-dom'
+import {Route, Routes, useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion" 
 
 function App() {
