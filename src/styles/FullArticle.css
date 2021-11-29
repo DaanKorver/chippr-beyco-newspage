@@ -33,7 +33,13 @@
 }
 
 .full-article-text p {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+.full-article-text  h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: .5em;
 }
 
 @media (max-width: 85rem) {

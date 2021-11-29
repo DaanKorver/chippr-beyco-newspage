@@ -2,22 +2,25 @@
 import Sidebar from "@/components/Sidebar";
 import Article from "@/components/Article";
 import articles from "@/articles.json";
+import { motion } from "framer-motion" 
 import "@/styles/Home.css";
 function Home() {
   const posts = articles.map((item) => {
-    const { id, title, paragraphs, upload } = item;
+    const { id, title, image, description, upload } = item;
     return (
       <Article
         key={id}
         id={id}
         title={title}
-        body={paragraphs[0]}
+        description={description}
         upload={upload}
+        image={image}
       />
     );
   });
 
   return (
+    <motion.div initial={{ opacity: 0}} animate={{ opacity: 1 }} exit={{opacity: 0}}>
     <main>
       <section className="banner">
         <div>
@@ -39,6 +42,7 @@ function Home() {
         </div>
       </div>
     </main>
+    </motion.div>
   );
 }
 
