@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5427ad59.chunk.css",
+    "main.css": "/static/css/main.7a6a802d.chunk.css",
     "main.js": "/static/js/main.65e4de37.chunk.js",
     "main.js.map": "/static/js/main.65e4de37.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.da39a8b7.js",
@@ -8,7 +8,7 @@
     "static/js/2.db8c04bb.chunk.js": "/static/js/2.db8c04bb.chunk.js",
     "static/js/2.db8c04bb.chunk.js.map": "/static/js/2.db8c04bb.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5427ad59.chunk.css.map": "/static/css/main.5427ad59.chunk.css.map",
+    "static/css/main.7a6a802d.chunk.css.map": "/static/css/main.7a6a802d.chunk.css.map",
     "static/js/2.db8c04bb.chunk.js.LICENSE.txt": "/static/js/2.db8c04bb.chunk.js.LICENSE.txt",
     "static/media/blockchain.png": "/static/media/blockchain.4d20449d.png",
     "static/media/coffee_roasters.jpeg": "/static/media/coffee_roasters.4b143ecc.jpeg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.da39a8b7.js",
     "static/js/2.db8c04bb.chunk.js",
-    "static/css/main.5427ad59.chunk.css",
+    "static/css/main.7a6a802d.chunk.css",
     "static/js/main.65e4de37.chunk.js"
   ]
 }
