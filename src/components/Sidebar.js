@@ -4,7 +4,7 @@ import search from "@/assets/search.svg";
 import articles from "@/articles.json";
 import RecentArticle from "@/components/RecentArticle";
 
-function Sidebar() {
+function Sidebar(props) {
   const recentArticles = articles.slice(-3).map((item) => {
     const { id, title, image, upload } = item;
     return <RecentArticle key={id} id={id} title={title} image={image} upload={upload} />;
@@ -16,7 +16,7 @@ function Sidebar() {
       <form action="/">
         <label htmlFor="search">
           <img src={search} alt="magnifying-glass" />
-          <input type="search" id="search" placeholder="Find articles..." />
+          <input onChange={props.search} type="search" id="search" placeholder="Find articles..." />
         </label>
         <fieldset>
           <legend>

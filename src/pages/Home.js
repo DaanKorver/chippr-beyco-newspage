@@ -1,12 +1,38 @@
-// import {NavLink as Link} from 'react-router-dom'
+import React from 'react'
 import Sidebar from "@/components/Sidebar";
 import Article from "@/components/Article";
 import articles from "@/articles.json";
 import { motion } from "framer-motion" 
 import "@/styles/Home.css";
-function Home() {
-  const posts = articles.map((item) => {
-    const { id, title, image, description, upload } = item;
+
+function search(e,setter) {
+  const searchValue = e.target.value
+  if(!searchValue) {
+    setter(getAllArtilces)
+    return
+  }
+  const posts = articles.map(article=>{
+    if(article.title.toLowerCase().includes(searchValue.toLowerCase())) {
+      const { id, title, image, description, upload } = article;
+      return (
+        <Article
+          key={id}
+          id={id}
+          title={title}
+          description={description}
+          upload={upload}
+          image={image}
+        />
+      )
+    }
+    return false
+  })
+  setter(posts)
+}
+
+function getAllArtilces() {
+  return articles.map((article) => {
+    const { id, title, image, description, upload } = article;
     return (
       <Article
         key={id}
@@ -18,6 +44,10 @@ function Home() {
       />
     );
   });
+}
+
+function Home() {
+  const [posts, setPosts] = React.useState(getAllArtilces);
 
   return (
     <motion.div initial={{ opacity: 0}} animate={{ opacity: 1 }} exit={{opacity: 0}}>
@@ -37,8 +67,11 @@ function Home() {
       </section>
       <div className="articles">
         <div className="home-grid">
-          <div className="articles-container">{posts}</div>
-          <Sidebar />
+          <div className="articles-container">
+            {posts}
+            
+          </div>
+          <Sidebar search={e=>search(e, setPosts)}/>
         </div>
       </div>
     </main>
