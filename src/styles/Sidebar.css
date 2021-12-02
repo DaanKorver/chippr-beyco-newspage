@@ -79,6 +79,7 @@ input[type=search] {
   transition: all .3s;
   width: 100%;
   font-size: 1em;
+  margin: 1em 0;
 }
 
 input[type=search]:hover {
@@ -95,6 +96,16 @@ label > img {
   top: 50%;
   transform: translateY(-50%);
   left: .5em;
+}
+
+.full-article .sidebar form {
+  display: none;
+}
+
+@media (max-width: 85rem) {
+  .full-article .sidebar {
+    display: none;
+  }
 }
 
 @media (max-width: 85rem) {

@@ -13,6 +13,7 @@
   object-fit: cover;
   margin: 0 auto;
   margin-bottom: 2em;
+  border-radius: 0.5rem;
 }
 
 .full-article-text {
@@ -40,6 +41,26 @@
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: .5em;
+}
+
+.full-article .tags {
+  display: flex;
+}
+
+.full-article .tags > time:first-child {
+  margin-right: 1em;
+  position: relative;
+}
+
+.full-article .tags > time:first-child::after {
+  content: "";
+  position: absolute;
+  height: 75%;
+  top: 50%;
+  width: 1px;
+  right: -0.5rem;
+  background-color: var(--color-grey);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 85rem) {

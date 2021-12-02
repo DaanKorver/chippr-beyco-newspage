@@ -7,6 +7,7 @@
   display: inline-flex;
   transition: all .1s ease-in-out;
   background-color: #EFEFEF;
+  cursor: pointer;
 }
 
 .btn.small {
